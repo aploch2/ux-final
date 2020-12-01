@@ -60,7 +60,7 @@
     ?>
     <h1>Event Registration</h1>
 
-    <form action="booth-selection.php" method="post" name="registration" class="registration-form booth">
+    <form action="confirmation.php" method="post" name="registration" class="registration-form booth" id="registration-form">
         <!-- <select name="date-selection" id="date-section">
             <option value="<?php $eventDate ?>" selected><?= $eventDate ?: 'Select an Event' ?></option>
             <option value="January 21st">January 21st</option>

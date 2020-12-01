@@ -38,6 +38,15 @@ $(document).ready(function(){
         $('#to-booth-selection').html("Finish Registration");
 
     }
+    Exhibitor.click(function(){
+        if(Exhibitor.prop('checked', true)){
+            $("#registration-form").attr('action', 'booth-selection.php');
+            console.log('booth');
+        } else {
+            $("#registration-form").attr('action', 'confirmation.php');
+            console.log('confirm');
+        }
+    });
 
     /////////////////////////////////////
 

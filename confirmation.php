@@ -60,7 +60,9 @@
         $b2_2 = $_SESSION['B2_2'];
         $b3_2 = $_SESSION['B3_2'];
         $b4_2 = $_SESSION['B4_2'];
-
+        
+        $event1Dates = $a2_1 . ' ' . $a3_1 . ' ' . $a4_1 . ' ' . $b2_1 . ' ' . $b3_1 . ' ' . $b4_1;
+        $event2Dates = $a2_2 . ' ' . $a3_2 . ' ' . $a4_2 . ' ' . $b2_2 . ' ' . $b3_2 . ' ' . $b4_2;
         // echo $a2_1 . '<br>' . $a3_1 . '<br>' . $a4_1 . '<br>' . $b2_1 . '<br>' . $b3_1 . '<br>' . $b4_1 . '<br>' . $a2_2 . '<br>' . $a3_2 . '<br>' . $a4_2 . '<br>' . $b2_2 . '<br>' . $b3_2 . '<br>' . $b4_2;
 
     
@@ -74,12 +76,18 @@
     <h1>Registration Complete</h1>
     <div class="confirmation-content">
         <div id="confirmation-information">
-            <p>Booth Number: <span class="purple-text"><?= $A1 ?></span></p>
             <p>Event Date(s): <span class="purple-text"><?= $eventDate . '</span><br><span class="purple-text">' . $eventDate2 ?: '</span>' ?></span></p>
+            <p><?= $eventDate . ' Booth(s)' ?: ''; ?>: <span class="purple-text"><?= $event1Dates ?></span></p>
+            <?php 
+                if($eventDate2 != null){
+                    echo '<p>' . $eventDate2 . ' Booth(s):' . '<span class="purple-text"> ' . $event2Dates . '</span></p>';
+                }
+            ?>
+            
         </div>
         <div class="button-container">
-            <a href="index.php" class="button purple">Return Home</a>
             <button class="button purple" id="add-to-calendar">Add to Calendar</button>
+            <a href="index.php" class="button purple">Return Home</a>
         </div>
     </div>
 </main>
