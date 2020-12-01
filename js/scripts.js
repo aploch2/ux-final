@@ -39,6 +39,14 @@ $(document).ready(function(){
 
     }
 
+    /////////////////////////////////////
+
+    $("#add-to-calendar").click(function(){
+        alert('Event(s) added to Calendar');
+    });
+
+    
+
     // $("#map-icon-2").change(function(){
     //     if($(this).prop('checked', true)) {
     //         $("#booth-a2").css('display', 'flex');
@@ -56,6 +64,10 @@ $(document).ready(function(){
 
 
 });
+
+function chooseNextEvent() {
+    alert('Please choose the next upcoming event');
+}
 
 function next1() {
     var Sponsor = document.getElementById("Sponsor");

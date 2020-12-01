@@ -70,8 +70,8 @@
                 <div class="calendar-cell cell-18"><p>16</p></div>
                 <div class="calendar-cell cell-19">
                     <p>17</p>
-                    <p class="calendar-event">Craft Event: 8am-2pm</p>
-                    <p class="calendar-event">Craft Event: 4pm-8pm</p>
+                    <p class="calendar-event" onclick="chooseNextEvent()">Craft Event: 8am-2pm</p>
+                    <p class="calendar-event" onclick="chooseNextEvent()">Craft Event: 4pm-8pm</p>
                 </div>
                 <div class="calendar-cell cell-20"><p>18</p></div>
                 <div class="calendar-cell cell-21"><p>19</p></div>
@@ -84,7 +84,7 @@
                 <div class="calendar-cell cell-28"><p>26</p></div>
                 <div class="calendar-cell cell-29">
                     <p>27</p>
-                    <p class="calendar-event">Craft Event: 8am-5pm</p>
+                    <p class="calendar-event" onclick="chooseNextEvent()">Craft Event: 8am-5pm</p>
                 </div>
                 <div class="calendar-cell cell-30"><p>28</p></div>
                 <div class="calendar-cell cell-31"><p>29</p></div>
@@ -118,7 +118,7 @@
                 <svg viewBox="0 0 365.696 365.696" xmlns="http://www.w3.org/2000/svg"><path d="m243.1875 182.859375 113.132812-113.132813c12.5-12.5 12.5-32.765624 0-45.246093l-15.082031-15.082031c-12.503906-12.503907-32.769531-12.503907-45.25 0l-113.128906 113.128906-113.132813-113.152344c-12.5-12.5-32.765624-12.5-45.246093 0l-15.105469 15.082031c-12.5 12.503907-12.5 32.769531 0 45.25l113.152344 113.152344-113.128906 113.128906c-12.503907 12.503907-12.503907 32.769531 0 45.25l15.082031 15.082031c12.5 12.5 32.765625 12.5 45.246093 0l113.132813-113.132812 113.128906 113.132812c12.503907 12.5 32.769531 12.5 45.25 0l15.082031-15.082031c12.5-12.503906 12.5-32.769531 0-45.25zm0 0"/></svg>
             </div>
             <div class="modal-footer">
-                <button class="button blue">Add to Calendar</button>
+                <button class="button blue" id="add-to-calendar">Add to Calendar</button>
                 <form action="login.php" name="event-modal" method="post">
                     <input type="text" name="event-date-1" value="December 6th">
                     <input type="submit" value="Register Now" class="button blue">

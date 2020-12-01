@@ -79,6 +79,7 @@
         </div>
         <div class="button-container">
             <a href="index.php" class="button purple">Return Home</a>
+            <button class="button purple" id="add-to-calendar">Add to Calendar</button>
         </div>
     </div>
 </main>
