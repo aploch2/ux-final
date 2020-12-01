@@ -1,5 +1,5 @@
 <?php
-    $pageTitle = 'Home - TNT Events Inc.';
+    $pageTitle = 'Booth Selection - TNT Events Inc.';
  
     include('includes/header.html.php');
 
@@ -42,7 +42,12 @@
     // $_SESSION['select-event-1'] = $_POST['select-event-1'];
     // $_SESSION['select-event-2'] = $_POST['select-event-2'];
 
-    // $_SESSION['A1'] = $_POST['A1'];
+    $_SESSION['A2_1'] = $_POST['A2_1'];
+    $_SESSION['A3_1'] = $_POST['A3_1'];
+    $_SESSION['A4_1'] = $_POST['A4_1'];
+    $_SESSION['B2_1'] = $_POST['B2_1'];
+    $_SESSION['B3_1'] = $_POST['B3_1'];
+    $_SESSION['B4_1'] = $_POST['B4_1'];
     
     // personal info
     $vendorOption = $_SESSION['vendor-choice-1'];
@@ -80,6 +85,15 @@
     // event info
     $eventDate = $_SESSION['select-event-1'];
     $eventDate2 = $_SESSION['select-event-2'];
+
+    $a2_1 = $_SESSION['A2_1'];
+    $a3_1 = $_SESSION['A3_1'];
+    $a4_1 = $_SESSION['A4_1'];
+    $b2_1 = $_SESSION['B2_1'];
+    $b3_1 = $_SESSION['B3_1'];
+    $b4_1 = $_SESSION['B4_1'];
+    
+    // echo $a2_1 . '<br>' . $a3_1 . '<br>' . $a4_1 . '<br>' . $b2_1 . '<br>' . $b3_1 . '<br>' . $b4_1;
     /* how to booth selection:
         - make the booths radio buttons
     */
@@ -185,19 +199,19 @@
                         </div>
                         <div class="map-icon-container">
                             <label>2
-                                <input type="checkbox" class="map-icon-left map-icon" id="map-icon-2" value="A2" name="A2">
+                                <input type="checkbox" class="map-icon-left map-icon" id="map-icon-2" value="A2" name="A2_2">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 55" class="booth booth_empty"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M72.77,2a.23.23,0,0,1,.23.23V52.77a.23.23,0,0,1-.23.23H2.23A.23.23,0,0,1,2,52.77V2.23A.23.23,0,0,1,2.23,2H72.77m0-2H2.23A2.23,2.23,0,0,0,0,2.23V52.77A2.23,2.23,0,0,0,2.23,55H72.77A2.23,2.23,0,0,0,75,52.77V2.23A2.23,2.23,0,0,0,72.77,0Z"/></g></g></svg>
                             </label>
                         </div>
                         <div class="map-icon-container">
                             <label>3
-                                <input type="checkbox" class="map-icon-left map-icon" id="map-icon-3" value="A3" name="A3">
+                                <input type="checkbox" class="map-icon-left map-icon" id="map-icon-3" value="A3" name="A3_2">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 55" class="booth booth_empty"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M72.77,2a.23.23,0,0,1,.23.23V52.77a.23.23,0,0,1-.23.23H2.23A.23.23,0,0,1,2,52.77V2.23A.23.23,0,0,1,2.23,2H72.77m0-2H2.23A2.23,2.23,0,0,0,0,2.23V52.77A2.23,2.23,0,0,0,2.23,55H72.77A2.23,2.23,0,0,0,75,52.77V2.23A2.23,2.23,0,0,0,72.77,0Z"/></g></g></svg>
                             </label>
                         </div>
                         <div class="map-icon-container">
                             <label>4
-                                <input type="checkbox" class="map-icon-left map-icon" id="map-icon-4" value="A4" name="A4">
+                                <input type="checkbox" class="map-icon-left map-icon" id="map-icon-4" value="A4" name="A4_2">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 55" class="booth booth_empty_power"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M72.77,2a.23.23,0,0,1,.23.23V52.77a.23.23,0,0,1-.23.23H2.23A.23.23,0,0,1,2,52.77V2.23A.23.23,0,0,1,2.23,2H72.77m0-2H2.23A2.23,2.23,0,0,0,0,2.23V52.77A2.23,2.23,0,0,0,2.23,55H72.77A2.23,2.23,0,0,0,75,52.77V2.23A2.23,2.23,0,0,0,72.77,0Z"/><path class="cls-2" d="M35.82,17c-.08,0-.13.11-.82,1.15-1.61,2.42-1.31,2-4.42,6.68C29.7,26.19,29,27.3,29,27.32a.14.14,0,0,0,0,.18s.89.43,2.09,1l2.08,1a.14.14,0,0,1,0,.2l-.59.73-.88,1.06c-.18.22-.45.54-.58.71L30,33.55,28.79,35l-.59.72c-1.48,1.79-1.38,1.67-1.38,1.73a.3.3,0,0,0,.26.25c.09,0-.5.34,5.08-2.83l3.63-2.06L40,30.4l3.49-2,1.68-1a.1.1,0,0,0,0-.17l-2.08-1-2.12-1c-.1,0-.13-.11-.11-.18s.21-.28,1.52-1.86l.83-1,1-1.21,1.18-1.42,1.24-1.5c.44-.53.81-1,.83-1s0-.13,0-.15-2.23,0-5.77,0C36,17,35.9,17,35.82,17Z"/></g></g></svg>
                             </label>
                         </div>
@@ -218,19 +232,19 @@
                         </div>
                         <div class="map-icon-container">
                             <label>
-                                <input type="checkbox" class="map-icon-right map-icon" id="map-icon-7" value="B2" name="B2">
+                                <input type="checkbox" class="map-icon-right map-icon" id="map-icon-7" value="B2" name="B2_2">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 55" class="booth booth_empty"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M72.77,2a.23.23,0,0,1,.23.23V52.77a.23.23,0,0,1-.23.23H2.23A.23.23,0,0,1,2,52.77V2.23A.23.23,0,0,1,2.23,2H72.77m0-2H2.23A2.23,2.23,0,0,0,0,2.23V52.77A2.23,2.23,0,0,0,2.23,55H72.77A2.23,2.23,0,0,0,75,52.77V2.23A2.23,2.23,0,0,0,72.77,0Z"/></g></g></svg>
                             2</label>
                         </div>
                         <div class="map-icon-container">
                             <label>
-                                <input type="checkbox" class="map-icon-right map-icon" id="map-icon-8" value="B3" name="B3">
+                                <input type="checkbox" class="map-icon-right map-icon" id="map-icon-8" value="B3" name="B3_2">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 55" class="booth booth_empty"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M72.77,2a.23.23,0,0,1,.23.23V52.77a.23.23,0,0,1-.23.23H2.23A.23.23,0,0,1,2,52.77V2.23A.23.23,0,0,1,2.23,2H72.77m0-2H2.23A2.23,2.23,0,0,0,0,2.23V52.77A2.23,2.23,0,0,0,2.23,55H72.77A2.23,2.23,0,0,0,75,52.77V2.23A2.23,2.23,0,0,0,72.77,0Z"/></g></g></svg>
                             3</label>
                         </div>
                         <div class="map-icon-container">
                             <label>
-                                <input type="checkbox" class="map-icon-right map-icon" id="map-icon-9" value="B4" name="B4">
+                                <input type="checkbox" class="map-icon-right map-icon" id="map-icon-9" value="B4" name="B4_2">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 55" class="booth booth_empty_power"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M72.77,2a.23.23,0,0,1,.23.23V52.77a.23.23,0,0,1-.23.23H2.23A.23.23,0,0,1,2,52.77V2.23A.23.23,0,0,1,2.23,2H72.77m0-2H2.23A2.23,2.23,0,0,0,0,2.23V52.77A2.23,2.23,0,0,0,2.23,55H72.77A2.23,2.23,0,0,0,75,52.77V2.23A2.23,2.23,0,0,0,72.77,0Z"/><path class="cls-2" d="M35.82,17c-.08,0-.13.11-.82,1.15-1.61,2.42-1.31,2-4.42,6.68C29.7,26.19,29,27.3,29,27.32a.14.14,0,0,0,0,.18s.89.43,2.09,1l2.08,1a.14.14,0,0,1,0,.2l-.59.73-.88,1.06c-.18.22-.45.54-.58.71L30,33.55,28.79,35l-.59.72c-1.48,1.79-1.38,1.67-1.38,1.73a.3.3,0,0,0,.26.25c.09,0-.5.34,5.08-2.83l3.63-2.06L40,30.4l3.49-2,1.68-1a.1.1,0,0,0,0-.17l-2.08-1-2.12-1c-.1,0-.13-.11-.11-.18s.21-.28,1.52-1.86l.83-1,1-1.21,1.18-1.42,1.24-1.5c.44-.53.81-1,.83-1s0-.13,0-.15-2.23,0-5.77,0C36,17,35.9,17,35.82,17Z"/></g></g></svg>
                             4</label>
                         </div>
@@ -248,10 +262,10 @@
                 <h3>Booth(s) Selected:</h3>
                 <div id="content-right-body"></div>
                 <div id="content-right-footer">
-                    <div id="total-container">
+                    <!-- <div id="total-container">
                         <p>Total:</p>
                         <p>$ <span id="total-cost"></span></p>
-                    </div>
+                    </div> -->
                     <div class="button-container">
                         <input type="submit" value="Finish Registration" class="button green">
                     </div>
