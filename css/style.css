@@ -1181,6 +1181,17 @@ h1 {
   margin-bottom: 1em;
 }
 
+.confirmation-content #confirmation-information h2 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.confirmation-content section {
+  margin-bottom: 1em;
+  border-bottom: 2px solid var(--gray);
+  padding: 2em 0;
+}
+
 .confirmation-content .button-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1191,6 +1202,10 @@ h1 {
   width: 100%;
   margin: 0 auto;
   margin-top: 2em;
+}
+
+.confirmation-content #add-to-calendar {
+  margin-right: 1em;
 }
 
 .login-content {

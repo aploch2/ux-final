@@ -1030,6 +1030,15 @@ h1 {
             font-size: 1.2em;
             margin-bottom: 1em;
         }
+        h2 {
+            text-align: center;
+            margin-bottom: 1em;
+        }
+    }
+    section {
+        margin-bottom: 1em;
+        border-bottom: 2px solid var(--gray);
+        padding: 2em 0;
     }
     .button-container {
         display: flex;
@@ -1037,6 +1046,9 @@ h1 {
         width: 100%;
         margin: 0 auto;
         margin-top: 2em;
+    }
+    #add-to-calendar {
+        margin-right: 1em;
     }
 }
 

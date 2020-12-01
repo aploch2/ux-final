@@ -59,7 +59,7 @@
     $state = $_SESSION['state'];
     $zip = $_SESSION['zip-code'];
     $phone = $_SESSION['phone'];
-    $fax = $_PSOT['fax'];
+    $fax = $_SESSION['fax'];
     $emergencyNumber = $_SESSION['emergency'];
     $email = $_SESSION['email'];
 
@@ -92,7 +92,7 @@
     $b2_1 = $_SESSION['B2_1'];
     $b3_1 = $_SESSION['B3_1'];
     $b4_1 = $_SESSION['B4_1'];
-    
+
     // echo $a2_1 . '<br>' . $a3_1 . '<br>' . $a4_1 . '<br>' . $b2_1 . '<br>' . $b3_1 . '<br>' . $b4_1;
     /* how to booth selection:
         - make the booths radio buttons

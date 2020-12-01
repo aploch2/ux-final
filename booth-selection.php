@@ -15,7 +15,7 @@
     $_SESSION['state'] = $_POST['state'];
     $_SESSION['zip-code'] = $_POST['zip-code'];
     $_SESSION['phone'] = $_POST['phone'];
-    $_PSOT['fax'] = $_PSOT['fax'];
+    $_SESSION['fax'] = $_POST['fax'];
     $_SESSION['emergency'] = $_POST['emergency'];
     $_SESSION['email'] = $_POST['email'];
 
@@ -54,7 +54,7 @@
     $state = $_SESSION['state'];
     $zip = $_SESSION['zip-code'];
     $phone = $_SESSION['phone'];
-    $fax = $_PSOT['fax'];
+    $fax = $_SESSION['fax'];
     $emergencyNumber = $_SESSION['emergency'];
     $email = $_SESSION['email'];
 
@@ -84,6 +84,7 @@
         - make the booths radio buttons
     */
 
+    // echo $_POST['state'] . 'state';
     /* 
     TODO:
     - if statements to show divs of booths selected if checked

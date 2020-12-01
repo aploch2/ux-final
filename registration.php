@@ -89,9 +89,9 @@
                 <label for="address" class="input-label">Address: <span class="required">*</span></label><br>
                 <?php 
                     if ($address != null){
-                        echo '<input type="text" name="address" class="text-input" value="' . $address . '"><br>';
+                        echo '<input type="text" name="address" class="text-input" value="' . $address . '" required><br>';
                     } else {
-                        echo '<input type="text" name="address" class="text-input"><br>';
+                        echo '<input type="text" name="address" class="text-input" required><br>';
                     }
                 ?>
                 <label for="address-line-2" class="input-label">Address Line 2:</label><br>
@@ -107,9 +107,9 @@
                         <label for="city" class="input-label">City: <span class="required">*</span></label><br>
                         <?php 
                             if ($city != null){
-                                echo '<input type="text" name="city" class="text-input" value="'. $city . '">';
+                                echo '<input type="text" name="city" class="text-input" value="'. $city . '" required>';
                             } else {
-                                echo '<input type="text" name="city" class="text-input">';
+                                echo '<input type="text" name="city" class="text-input" required>';
                             }
                         ?>
                         
@@ -118,8 +118,8 @@
                         <label for="state" class="input-label">State: <span class="required">*</span></label><br>
                         <?php 
                             if ($state != null){
-                                echo '<select name="state" class="input-select">
-                                <option value="' . $state . '" selected disabled hidden>' . $state . '</option>
+                                echo '<select name="state" class="input-select" required>
+                                <option value="' . $state . '" selected hidden>' . $state . '</option>
                                 <option value="AL">Alabama</option>
                                 <option value="AK">Alaska</option>
                                 <option value="AZ">Arizona</option>
@@ -173,7 +173,7 @@
                                 <option value="WY">Wyoming</option>
                             </select>';
                             } else {
-                                echo '<select name="state" class="input-select">
+                                echo '<select name="state" class="input-select" required>
                                 <option selected disabled hidden>Select State</option>
                                 <option value="AL">Alabama</option>
                                 <option value="AK">Alaska</option>
@@ -235,9 +235,9 @@
                         <label for="Zip Code" class="input-label">Zip Code: <span class="required">*</span></label><br>
                         <?php 
                             if ($zip != null){
-                                echo '<input type="text" name="zip-code" class="text-input" value="' . $zip . '">';
+                                echo '<input type="text" name="zip-code" class="text-input" value="' . $zip . '" required>';
                             } else {
-                                echo '<input type="text" name="zip-code" class="text-input">';
+                                echo '<input type="text" name="zip-code" class="text-input" required>';
                             }
                         ?>
                     </div>
@@ -247,9 +247,9 @@
                         <label for="phone" class="input-label">Phone Number: <span class="required">*</span></label><br>
                         <?php 
                             if ($phone != null){
-                                echo '<input type="phone" name="phone" class="text-input" value="' . $phone . '">';
+                                echo '<input type="phone" name="phone" class="text-input" value="' . $phone . '" required>';
                             } else {
-                                echo '<input type="phone" name="phone" class="text-input">';
+                                echo '<input type="phone" name="phone" class="text-input" required>';
                             }
                         ?>
                     </div>
@@ -260,15 +260,15 @@
                 </div>
                 <div class="input-container emergency-container">
                         <label for="emergency" class="input-label">Emergency Number: <span class="required">*</span></label><br>
-                        <input type="phone" name="emergency" class="text-input">
+                        <input type="phone" name="emergency" class="text-input" required>
                 </div>
                 <div class="input-container email-container">
                         <label for="email" class="input-label">Email: <span class="required">*</span></label><br>
                         <?php 
                             if($email != null){
-                                echo '<input type="email" name="email" class="text-input" value="' . $email . '">';
+                                echo '<input type="email" name="email" class="text-input" value="' . $email . '" required>';
                             } else {
-                                echo '<input type="email" name="email" class="text-input">';
+                                echo '<input type="email" name="email" class="text-input" required>';
                             }
                         ?>
                 </div>
@@ -324,11 +324,11 @@
                 <div class="car-info-row1">
                     <div class="car-row1-left">
                         <label for="auto-tag" class="input-label">Auto Tag: <span class="required">*</span></label><br>
-                        <input type="text" name="auto-tag" class="text-input" id="auto-tag"><br>
+                        <input type="text" name="auto-tag" class="text-input" id="auto-tag" required><br>
                     </div>
                     <div class="car-row1-right">
                         <label for="auto-state" class="input-label">State: <span class="required">*</span></label><br>
-                        <select name="auto-state" class="input-select" id="auto-state">
+                        <select name="auto-state" class="input-select" id="auto-state" required>
                             <option selected disabled hidden>Select State</option>
                             <option value="AL">Alabama</option>
                             <option value="AK">Alaska</option>
@@ -387,11 +387,11 @@
                 <div class="car-info-row2">
                     <div class="car-row2-left">
                         <label for="vehicle-type" class="input-label">Vehicle Type: <span class="required">*</span></label><br>
-                        <input type="text" name="vehicle-type" class="text-input" id="vehicle-type"><br>
+                        <input type="text" name="vehicle-type" class="text-input" id="vehicle-type" required><br>
                     </div>
                     <div class="car-row2-right">
                         <label for="vehicle-color" class="input-label">Color: <span class="required">*</span></label><br>
-                        <input type="text" name="vehicle-color" class="text-input" id="vehicle-color"><br>
+                        <input type="text" name="vehicle-color" class="text-input" id="vehicle-color" required><br>
                     </div>
                 </div>
             </section>
@@ -404,7 +404,7 @@
             <h2>Step 3: <span class="purple-text">Select an Event</span></h2>
             <section id="event-information">
                 <label for="select-event-1" class="input-label">Select An Event: <span class="required">*</span></label><br>
-                <select name="select-event-1" class="input-select" id="select-event-1">
+                <select name="select-event-1" class="input-select" id="select-event-1" required>
                     <?php 
                         if($eventDate === null){
                             echo '<option selected disabled hidden>Select an Event</option>';
