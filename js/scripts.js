@@ -32,6 +32,7 @@ $(document).ready(function(){
     })
     if (Exhibitor.checked === true){
         $('#to-booth-selection').html("Continue to Booth Selection");
+        // $("#to-booth-selection").attr('disabled', false);
         console.log('selected exhibitor');
     } else {
         $('#to-booth-selection').html("Finish Registration");
@@ -121,13 +122,13 @@ function next1() {
 //     }
 // }
 
-function next3() {
-    var Exhibitor = $('#Exhibitor');
+// function next3() {
+//     var Exhibitor = $('#Exhibitor');
 
-    if (Exhibitor.check === true){
-        $('#to-booth-selection').html("Continue to Booth Selection");
-    } else {
-        $('#to-booth-selection').html("Finish Registration");
+//     if (Exhibitor.check === true){
+//         $('#to-booth-selection').html("Continue to Booth Selection");
+//     } else {
+//         $('#to-booth-selection').html("Finish Registration");
 
-    }
-}
+//     }
+// }

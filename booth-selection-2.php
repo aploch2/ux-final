@@ -6,43 +6,43 @@
     // session_start();
 
     // personal info
-    $_SESSION['vendor-choice-1'] = $_POST['vendor-choice-1'];
-    $_SESSION['vendor-choice-2'] = $_POST['vendor-choice-2'];
-    $_SESSION['company-name'] = $_POST['company-name'];
-    $_SESSION['address'] = $_POST['address'];
-    $_SESSION['address-line-2'] = $_POST['address-line-2'];
-    $_SESSION['city'] = $_POST['city'];
-    $_SESSION['state'] = $_POST['state'];
-    $_SESSION['zip-code'] = $_POST['zip-code'];
-    $_SESSION['phone'] = $_POST['phone'];
-    $_PSOT['fax'] = $_PSOT['fax'];
-    $_SESSION['emergency'] = $_POST['emergency'];
-    $_SESSION['email'] = $_POST['email'];
+    // $_SESSION['vendor-choice-1'] = $_POST['vendor-choice-1'];
+    // $_SESSION['vendor-choice-2'] = $_POST['vendor-choice-2'];
+    // $_SESSION['company-name'] = $_POST['company-name'];
+    // $_SESSION['address'] = $_POST['address'];
+    // $_SESSION['address-line-2'] = $_POST['address-line-2'];
+    // $_SESSION['city'] = $_POST['city'];
+    // $_SESSION['state'] = $_POST['state'];
+    // $_SESSION['zip-code'] = $_POST['zip-code'];
+    // $_SESSION['phone'] = $_POST['phone'];
+    // $_PSOT['fax'] = $_PSOT['fax'];
+    // $_SESSION['emergency'] = $_POST['emergency'];
+    // $_SESSION['email'] = $_POST['email'];
 
-    // sponsor info
-    $_SESSION['rep-name'] = $_POST['rep-name'];
-    $_SESSION['product-description-sponsor'] = $_POST['product-description-sponsor'];
+    // // sponsor info
+    // $_SESSION['rep-name'] = $_POST['rep-name'];
+    // $_SESSION['product-description-sponsor'] = $_POST['product-description-sponsor'];
     
-    // exhibitor info
-    $_SESSION['exhibitor-name'] = $_POST['exhibitor-name'];
-    $_SESSION['website'] = $_POST['website'];
-    $_SESSION['special-requests'] = $_POST['special-requests'];
-    $_SESSION['product-description'] = $_POST['product-description'];
-    $_SESSION['length'] = $_POST['length'];
-    $_SESSION['width'] = $_POST['width'];
-    $_SESSION['height'] = $_POST['height'];
+    // // exhibitor info
+    // $_SESSION['exhibitor-name'] = $_POST['exhibitor-name'];
+    // $_SESSION['website'] = $_POST['website'];
+    // $_SESSION['special-requests'] = $_POST['special-requests'];
+    // $_SESSION['product-description'] = $_POST['product-description'];
+    // $_SESSION['length'] = $_POST['length'];
+    // $_SESSION['width'] = $_POST['width'];
+    // $_SESSION['height'] = $_POST['height'];
 
-    // car info
-    $_SESSION['auto-tag'] = $_POST['auto-tag'];
-    $_SESSION['auto-state'] = $_POST['auto-state'];
-    $_SESSION['vehicle-type'] = $_POST['vehicle-type'];
-    $_SESSION['vehicle-color'] = $_POST['vehicle-color'];
+    // // car info
+    // $_SESSION['auto-tag'] = $_POST['auto-tag'];
+    // $_SESSION['auto-state'] = $_POST['auto-state'];
+    // $_SESSION['vehicle-type'] = $_POST['vehicle-type'];
+    // $_SESSION['vehicle-color'] = $_POST['vehicle-color'];
 
-    // event info
-    $_SESSION['select-event-1'] = $_POST['select-event-1'];
-    $_SESSION['select-event-2'] = $_POST['select-event-2'];
+    // // event info
+    // $_SESSION['select-event-1'] = $_POST['select-event-1'];
+    // $_SESSION['select-event-2'] = $_POST['select-event-2'];
 
-    $_SESSION['A1'] = $_POST['A1'];
+    // $_SESSION['A1'] = $_POST['A1'];
     
     // personal info
     $vendorOption = $_SESSION['vendor-choice-1'];
@@ -130,7 +130,7 @@
     
     ?>
     <div class="booth-selection-content">
-        <h2 class="pageTitle">Selecting for Event: <br><span class="purple-text"><?= $eventDate ?: 'First Event' ?></span></h2>
+        <h2 class="pageTitle">Selecting for Event: <br><span class="purple-text"><?= $eventDate2 ?: 'Second Event' ?></span></h2>
         <form class="main-content" action="confirmation.php" method="post" name="booth-selection">
             <div class="content-left">
                 <h3>Booth Map</h3>

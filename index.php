@@ -3,6 +3,8 @@
  
     include('includes/header.html.php');
 
+    $_SESSION['event-date-1'] = 'December 6th';
+
 ?>
 <main>
     <section class="next-event-header">
@@ -17,7 +19,12 @@
                         <p class="event-location">Gateway to the Villages</p>
                         <div class="next-event-buttons">
                             <div class="inline"><a href="events.php" class="button purple">Learn More</a></div>
-                            <div class="inline"><a href="login.php" class="button purple">Register Now</a></div>
+                            <div class="inline">
+                                <form action="login.php" method="post">
+                                    <input type="submit" class="button purple" value="Register Now!">
+                                    <input type="text" value="December 6th" name="event-date-1" hidden>
+                                </form>    
+                            </div> 
                         </div>
                     </div>
             </div>

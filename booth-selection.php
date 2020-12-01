@@ -1,5 +1,5 @@
 <?php
-    $pageTitle = 'Home - TNT Events Inc.';
+    $pageTitle = 'Booth Selection - TNT Events Inc.';
  
     include('includes/header.html.php');
 
@@ -136,7 +136,13 @@
     ?>
     <div class="booth-selection-content">
         <h2 class="pageTitle">Selecting for Event: <br><span class="purple-text"><?= $eventDate ?: 'First Event' ?></span></h2>
-        <form class="main-content" action="confirmation.php" method="post" name="booth-selection" id="booth-selection">
+        <?php 
+            if ($eventDate2 != null) {
+                echo '<form class="main-content" action="booth-selection-2.php" method="post" name="booth-selection" id="booth-selection">';
+            } else {
+                echo '<form class="main-content" action="confirmation.php" method="post" name="booth-selection" id="booth-selection">';
+            }
+        ?>
             <div class="content-left">
                 <h3>Booth Map</h3>
                 <div id="key">
@@ -282,9 +288,20 @@
                         <p>Total:</p>
                         <p>$ <span id="total-cost"></span></p>
                     </div> -->
-                    <div class="button-container">
+                    <?php 
+                        if ($eventDate2 != null) {
+                            echo '<div class="button-container">
+                            <input type="submit" value="Next Booth Selection" class="button green">
+                        </div>';
+                        } else {
+                            echo '<div class="button-container">
+                            <input type="submit" value="Finish Registration" class="button green">
+                        </div>';
+                        }
+                    ?>
+                    <!-- <div class="button-container">
                         <input type="submit" value="Finish Registration" class="button green">
-                    </div>
+                    </div> -->
                 </div> 
             </div>
         </form>
