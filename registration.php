@@ -61,13 +61,6 @@
     <h1>Event Registration</h1>
 
     <form action="confirmation.php" method="post" name="registration" class="registration-form booth" id="registration-form">
-        <!-- <select name="date-selection" id="date-section">
-            <option value="<?php $eventDate ?>" selected><?= $eventDate ?: 'Select an Event' ?></option>
-            <option value="January 21st">January 21st</option>
-        </select>
-        <input type="text" name="name">
-        <input type="text" name="address">
-        <input type="submit" value="continue to booth selection"> -->
         <div id="step-personal">
             <h2>Step 1: <span class="purple-text">Personal Information</span></h2>
             <section class="personal-info">
