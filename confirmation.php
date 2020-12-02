@@ -3,6 +3,27 @@
  
     include('includes/header.html.php');
 
+        // if($_SESSION['A2_1'] = null){
+        //     $_SESSION['A2_1'] = $_POST['A2_1'];
+        // } else if ($_SESSION['A3_1'] = null){
+        //     $_SESSION['A3_1'] = $_POST['A3_1'];  
+        // } else if ($_SESSION['A4_1'] = null){
+        //     $_SESSION['A4_1'] = $_POST['A4_1'];
+        // } else if ($_SESSION['B2_1'] = null) {
+        //     $_SESSION['B2_1'] = $_POST['B2_1'];
+        // } else if ($_SESSION['B3_1'] = null){
+        //     $_SESSION['B3_1'] = $_POST['B3_1'];
+        // } else if ($_SESSION['B4_1'] = null){
+        //     $_SESSION['B4_1'] = $_POST['B4_1'];
+        // }
+        if($_SESSION['select-event-2'] === null){
+            $_SESSION['A2_1'] = $_POST['A2_1'];
+            $_SESSION['A3_1'] = $_POST['A3_1'];
+            $_SESSION['A4_1'] = $_POST['A4_1'];
+            $_SESSION['B2_1'] = $_POST['B2_1'];
+            $_SESSION['B3_1'] = $_POST['B3_1'];
+            $_SESSION['B4_1'] = $_POST['B4_1'];        
+        }
         $_SESSION['A2_2'] = $_POST['A2_2'];
         $_SESSION['A3_2'] = $_POST['A3_2'];
         $_SESSION['A4_2'] = $_POST['A4_2'];
