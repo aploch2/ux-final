@@ -394,7 +394,7 @@
             </div> -->
         </div>
         <div id="step-event">
-            <h2>Step 3: <span class="purple-text">Select an Event</span></h2>
+            <h2>Step 4: <span class="purple-text">Select an Event</span></h2>
             <section id="event-information">
                 <label for="select-event-1" class="input-label">Select An Event: <span class="required">*</span></label><br>
                 <select name="select-event-1" class="input-select" id="select-event-1" required>
