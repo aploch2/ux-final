@@ -24,6 +24,43 @@
             $_SESSION['B3_1'] = $_POST['B3_1'];
             $_SESSION['B4_1'] = $_POST['B4_1'];        
         }
+        if($_SESSION['vendor-choice-1'] === null){
+            $_SESSION['vendor-choice-1'] = $_POST['vendor-choice-1'];
+            $_SESSION['vendor-choice-2'] = $_POST['vendor-choice-2'];
+            $_SESSION['company-name'] = $_POST['company-name'];
+            $_SESSION['address'] = $_POST['address'];
+            $_SESSION['address-line-2'] = $_POST['address-line-2'];
+            $_SESSION['city'] = $_POST['city'];
+            $_SESSION['state'] = $_POST['state'];
+            $_SESSION['zip-code'] = $_POST['zip-code'];
+            $_SESSION['phone'] = $_POST['phone'];
+            $_SESSION['fax'] = $_POST['fax'];
+            $_SESSION['emergency'] = $_POST['emergency'];
+            $_SESSION['email'] = $_POST['email'];
+        
+            // sponsor info
+            $_SESSION['rep-name'] = $_POST['rep-name'];
+            $_SESSION['product-description-sponsor'] = $_POST['product-description-sponsor'];
+            
+            // exhibitor info
+            $_SESSION['exhibitor-name'] = $_POST['exhibitor-name'];
+            $_SESSION['website'] = $_POST['website'];
+            $_SESSION['special-requests'] = $_POST['special-requests'];
+            $_SESSION['product-description'] = $_POST['product-description'];
+            $_SESSION['length'] = $_POST['length'];
+            $_SESSION['width'] = $_POST['width'];
+            $_SESSION['height'] = $_POST['height'];
+        
+            // car info
+            $_SESSION['auto-tag'] = $_POST['auto-tag'];
+            $_SESSION['auto-state'] = $_POST['auto-state'];
+            $_SESSION['vehicle-type'] = $_POST['vehicle-type'];
+            $_SESSION['vehicle-color'] = $_POST['vehicle-color'];
+        
+            // event info
+            $_SESSION['select-event-1'] = $_POST['select-event-1'];
+            $_SESSION['select-event-2'] = $_POST['select-event-2'];
+        }
         $_SESSION['A2_2'] = $_POST['A2_2'];
         $_SESSION['A3_2'] = $_POST['A3_2'];
         $_SESSION['A4_2'] = $_POST['A4_2'];
