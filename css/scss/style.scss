@@ -952,7 +952,7 @@ footer {
 
                 .booth-container {
                     display: none;
-                    justify-content: start;
+                    align-items: center;
                     margin-bottom: 1em;
 
                     svg {
@@ -962,6 +962,8 @@ footer {
                         border-radius: 0.2em;
                         margin-right: 1em;  
                         font-size: 1.25em; 
+                        display: inline-block;
+                        vertical-align: top;
                     }
                     .booth_empty {
                         .cls-1 {
@@ -982,8 +984,15 @@ footer {
                     p {
                         font-weight: bold;
                         font-size: 1.25em;
+                        display: inline-block;
+                        align-self: center;
                     }
                     
+                }
+                .booth-container-flex {
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
                 }
                 #booth-a2 {
                     display: none;

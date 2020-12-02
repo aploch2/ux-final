@@ -1092,9 +1092,9 @@ footer .footer-content a:hover {
 
 .booth-selection-content .main-content .content-right #content-right-body .booth-container {
   display: none;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 1em;
 }
 
@@ -1104,6 +1104,8 @@ footer .footer-content a:hover {
   border-radius: 0.2em;
   margin-right: 1em;
   font-size: 1.25em;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .booth-selection-content .main-content .content-right #content-right-body .booth-container .booth_empty .cls-1 {
@@ -1123,6 +1125,22 @@ footer .footer-content a:hover {
 .booth-selection-content .main-content .content-right #content-right-body .booth-container p {
   font-weight: bold;
   font-size: 1.25em;
+  display: inline-block;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.booth-selection-content .main-content .content-right #content-right-body .booth-container-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .booth-selection-content .main-content .content-right #content-right-body #booth-a2 {

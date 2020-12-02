@@ -55,14 +55,26 @@ $(document).ready(function(){
     });
 
     
-
-    // $("#map-icon-2").change(function(){
-    //     if($(this).prop('checked', true)) {
-    //         $("#booth-a2").css('display', 'flex');
-    //     } else if($(this).prop('checked', false)){
-    //         $("#booth-a1").css('display', 'none');
-    //     }
-    // });
+    
+    $("#map-icon-2").click(function(){
+        $("#booth-a2").toggle();
+    });
+    $("#map-icon-3").click(function(){
+        $("#booth-a3").toggle();
+    });
+    $("#map-icon-4").click(function(){
+        $("#booth-a4").toggle();
+    });
+    $("#map-icon-7").click(function(){
+        $("#booth-b2").toggle();
+    });
+    $("#map-icon-8").click(function(){
+        $("#booth-b3").toggle();
+    });
+    $("#map-icon-9").click(function(){
+        $("#booth-b4").toggle();
+    });
+    
     
     // $('#map-icon-1').prop('checked', false);
     // if ($('#map-icon-1').checked === true){
