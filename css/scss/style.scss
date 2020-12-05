@@ -713,6 +713,28 @@ footer {
            #select-event-2 {
                display: none;
            }
+           #second-event {
+               display: flex;
+               justify-content: start;
+            //    align-items: center;
+
+           }
+           #remove-event-button {
+            //    display: inline;
+                display: none;
+                color: var(--dark-gray);
+               font-size: 2em;
+               transform-origin: 0 0;
+               transform: rotate(45deg);
+               margin-left: 1em;
+               transition: 0.2s ease-in-out;
+               
+               &:hover {
+                   cursor: pointer;
+                   color: var(--purple);
+                   transition: 0.2s ease-in-out;
+               }
+           }
        }
        #i-am-a {
            margin-bottom: 5em;

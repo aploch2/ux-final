@@ -79,10 +79,13 @@
                     ?>
                     <option value="January 22nd">January 22nd</option>
                 </select>
+                <div id="second-event">
                 <select name="select-event-2" class="input-select" id="select-event-2">
                     <option selected disabled hidden>Select an Event</option>
                     <option value="January 22nd">January 22nd</option>
                 </select>
+                <p id="remove-event-button">+</p>
+                </div>
                 <div id="add-event">
                     <p>Add an Additional Event:</p>
                     <p class="button green" id="add-event-button">+</p>

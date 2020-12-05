@@ -23,7 +23,14 @@ $(document).ready(function(){
     $('#add-event-button').click(function(){
         $('#select-event-2').toggle();
         $('#add-event').toggle();
+        $('#remove-event-button').toggle();
     });
+
+    $('#remove-event-button').click(function(){
+        $('#select-event-2').toggle();
+        $('#add-event').toggle();
+        $('#remove-event-button').toggle();
+    })
     
     var Exhibitor = $('#Exhibitor');
 
