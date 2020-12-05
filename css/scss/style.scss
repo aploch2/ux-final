@@ -580,7 +580,7 @@ footer {
             justify-content: space-evenly;
             width: 50%;
             margin: 0 auto;
-            margin-bottom: 3em;
+            // margin-bottom: 3em;
             // margin-top: 1em;
 
             .vendor-select-right {
@@ -703,7 +703,8 @@ footer {
             }  
        }
        #step-event {
-            margin-top: 5em;;   
+            // margin-top: 5em;
+            margin-bottom: 5em;   
 
            #select-event-1, #select-event-2 {
                    width: 50%;
@@ -712,6 +713,9 @@ footer {
            #select-event-2 {
                display: none;
            }
+       }
+       #i-am-a {
+           margin-bottom: 5em;
        }
        #add-event {
            display: flex;

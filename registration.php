@@ -61,9 +61,38 @@
     <h1>Event Registration</h1>
 
     <form action="confirmation.php" method="post" name="registration" class="registration-form booth" id="registration-form">
+        <div id="step-event">
+            <h2>Step 1: <span class="purple-text">Select Event(s)</span></h2>
+            <section id="event-information">
+                <label for="select-event-1" class="input-label">Select An Event: <span class="required">*</span></label><br>
+                <select name="select-event-1" class="input-select" id="select-event-1" required>
+                    <?php 
+                        if($eventDate === null){
+                            echo '<option selected disabled hidden>Select an Event</option>';
+                        } else {
+                            echo '<option value="' . $eventDate . '" selected >'  . $eventDate . '</option>';
+                        }
+
+                        if($eventDate != 'December 6th'){
+                            echo '<option value="December 6th">December 6th</option>';
+                        }
+                    ?>
+                    <option value="January 22nd">January 22nd</option>
+                </select>
+                <select name="select-event-2" class="input-select" id="select-event-2">
+                    <option selected disabled hidden>Select an Event</option>
+                    <option value="January 22nd">January 22nd</option>
+                </select>
+                <div id="add-event">
+                    <p>Add an Additional Event:</p>
+                    <p class="button green" id="add-event-button">+</p>
+                </div>
+            </section>
+            
+        </div>
         <div id="step-personal">
-            <h2>Step 1: <span class="purple-text">Personal Information</span></h2>
-            <section class="personal-info">
+            <h2>Step 2: <span class="purple-text">Sign up As</span></h2>
+            <section id="i-am-a">
                 <div class="vendor-select">
                     <div class="vendor-select-left">
                         <p>I am a:</p>
@@ -77,6 +106,12 @@
                         <label for="Sponsor">Sponsor</label>
                     </div>
                 </div>
+            </section>
+        </div>
+        <div id="step-personal">
+            <h2>Step 3: <span class="purple-text">Personal Information</span></h2>
+            <section class="personal-info">
+                
                 <label for="company-name" class="input-label">Company Name:</label><br>
                 <input type="text" name="company-name" class="text-input"><br>
                 <label for="address" class="input-label">Address: <span class="required">*</span></label><br>
@@ -271,7 +306,7 @@
             </div> -->
         </div>
         <div id="step-sponsor">
-            <h2>Step 2: <span class="purple-text">Sponsor Information</span></h2>
+            <h2>Step 4: <span class="purple-text">Sponsor Information</span></h2>
             <section id="sponsor-information">
                 <label for="rep-name" class="input-label">Rep. Name: <span class="required">*</span></label><br>
                 <input type="text" name="rep-name" class="text-input" id="rep-name" onclick="next2()"><br>
@@ -280,7 +315,7 @@
             </section>
         </div>
         <div id="step-exhibitor">
-            <h2>Step 3: <span class="purple-text">Exhibitor Information</span></h2>
+            <h2>Step 5: <span class="purple-text">Exhibitor Information</span></h2>
             <section id="exhibitor-information">
                 <label for="exhibitor-name" class="input-label">Exhibitor Name: <span class="required">*</span></label><br>
                 <?php 
@@ -393,37 +428,10 @@
                 <button id="next2" class="button green next" disabled>Continue to Next Step</button>
             </div> -->
         </div>
-        <div id="step-event">
-            <h2>Step 3: <span class="purple-text">Select an Event</span></h2>
-            <section id="event-information">
-                <label for="select-event-1" class="input-label">Select An Event: <span class="required">*</span></label><br>
-                <select name="select-event-1" class="input-select" id="select-event-1" required>
-                    <?php 
-                        if($eventDate === null){
-                            echo '<option selected disabled hidden>Select an Event</option>';
-                        } else {
-                            echo '<option value="' . $eventDate . '" selected >'  . $eventDate . '</option>';
-                        }
-
-                        if($eventDate != 'December 6th'){
-                            echo '<option value="December 6th">December 6th</option>';
-                        }
-                    ?>
-                    <option value="January 22nd">January 22nd</option>
-                </select>
-                <select name="select-event-2" class="input-select" id="select-event-2">
-                    <option selected disabled hidden>Select an Event</option>
-                    <option value="January 22nd">January 22nd</option>
-                </select>
-                <div id="add-event">
-                    <p>Add an Event:</p>
-                    <p class="button green" id="add-event-button">+</p>
-                </div>
-            </section>
-            <div class="button-container">
+        
+        <div class="button-container">
                 <input type="submit" id="to-booth-selection" class="button green next" value="Finish Registration">
             </div>
-        </div>
     </form>
 </main>
 <?php 
