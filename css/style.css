@@ -659,7 +659,6 @@ footer .footer-content a:hover {
           justify-content: space-evenly;
   width: 50%;
   margin: 0 auto;
-  margin-bottom: 3em;
 }
 
 .registration-content .registration-form .vendor-select .vendor-select-right label {
@@ -808,7 +807,7 @@ footer .footer-content a:hover {
 }
 
 .registration-content .registration-form #step-event {
-  margin-top: 5em;
+  margin-bottom: 5em;
 }
 
 .registration-content .registration-form #step-event #select-event-1, .registration-content .registration-form #step-event #select-event-2 {
@@ -818,6 +817,10 @@ footer .footer-content a:hover {
 
 .registration-content .registration-form #step-event #select-event-2 {
   display: none;
+}
+
+.registration-content .registration-form #i-am-a {
+  margin-bottom: 5em;
 }
 
 .registration-content .registration-form #add-event {
