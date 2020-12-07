@@ -30,6 +30,7 @@ $(document).ready(function(){
         $('#select-event-2').toggle();
         $('#add-event').toggle();
         $('#remove-event-button').toggle();
+        $("#select-event-2").prop('selectedIndex', 0);
     })
     
     var Exhibitor = $('#Exhibitor');
